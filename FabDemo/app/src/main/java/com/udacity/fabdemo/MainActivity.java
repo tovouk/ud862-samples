@@ -25,6 +25,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,5 +58,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void clicked(View view){
+        Toast.makeText(getApplicationContext(),"clicked the fab",Toast.LENGTH_SHORT).show();
     }
 }
